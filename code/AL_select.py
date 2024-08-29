@@ -5,7 +5,8 @@ from shapely import geometry
 from region_sampler import RegionSampler
 from SlideContainer import *
 from result_analysis import get_pred_map
-
+import random, json
+import numpy as np
 
 def check_overlap(dets):
     """check if the first region overlaps with any other regions -> avoid selecting overlapping regions
