@@ -1,4 +1,9 @@
+import torch
+import os
+import numpy as np
+import json
 import argparse
+os.add_dll_directory("E:\\AdaptiveRegionSelection\\openslide\\bin")
 from AL_select import select_regions
 from FROC import FROC_analysis
 from inference import predict
